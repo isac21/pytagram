@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 
-{% block title %}Main page of Pytagram{% endblock %}
+{% block title %}Pytagram{% endblock %}
 
+{% load staticfiles %}
 {% block content %}
 <div id="content">
-  This is Content area
+  <img src = "{% static "img/kground.jpg" %}", style='width:100%'>
+  <h1>Pystagram</h1>
+
+  <ul>
+
+  <li><h3><a href="{% url 'photo:photo_add' %}"> Upload Your Picture </a></h3></li>
+  <li><h3><a href="#"> Check your Picture </a></h3></li>
+  <li><h3><a href="http://blog.naver.com/isac31">Go to Wooyong's blog</a></h3></li>
+
+  </ul>
 </div>
 {% endblock content %}

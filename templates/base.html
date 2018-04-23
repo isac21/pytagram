@@ -2,7 +2,7 @@
 <html lang='ko'>
 
 <head>
-<title>{% block title %}Pytagram{% endblock %}</title>
+<title>{% block title %}{% endblock %}</title>
 
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" />
@@ -14,7 +14,7 @@
 
 <!Header section>
   <div id="header">
-    <h2 class="maintitle"><a href="{% url 'home' %}">pytagram Web programming</a></h2>
+    <h2 class="maintitle"><a href="{% url 'home' %}">PYTAGRAM</a></h2>
 
     {% if user.is_active %}
     <h4 class="welcome">Welcome,
