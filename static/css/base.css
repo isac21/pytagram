@@ -12,7 +12,7 @@ div#header {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 30px;
+  height: 60px;
   width: 100%;
   display: table;
   background: skyblue;
@@ -24,18 +24,18 @@ div#header {
   padding-left: 20px;
   color: #ffc;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 38px;
   font-style: italic;
 }
 
 .welcome {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
   text-align: right;
   padding-right: 20px;
   color: #ffc;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .welcome a:link, .welcome a:visited {
@@ -47,18 +47,13 @@ div#header {
 
 div#menu {
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 0px;
   height: auto;
-  width: 100px;
+  width: 130px;
   margin: 0px;
   display: table;
   /*background: #ffa;*/
-  background: #ffa;
-  background: -moz-linear-gradient(#ffa 0%, #fcd 70%);
-  background: -webkit-linear-gradient(#ffa 0%, #fcd 70%);
-  background: -o-linear-gradient(#ffa 0%, #fca 70%);
-  background: linear-gradient(#ffa 0%, #fca 70%);
 }
 
 div#menu h3 {
@@ -66,15 +61,14 @@ div#menu h3 {
   padding: 0;
 }
 
-div#menu h3 a{
+div#menu h3 a {
   display: block;
-  /*border: 2px solid #bbb;*/
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
-  padding: 8px;
+  padding: 10px;
   color: #fff;
-  font-size: 11px;
+  font-size: 18px;
   background: #ffa;
   background: -moz-linear-gradient(#ffa 0%, #fcd 70%);
   background: -webkit-linear-gradient(#ffa 0%, #fcd 70%);
@@ -107,18 +101,19 @@ div#menu p{
 }
 
 div#menu :target p{
-  height: 20px;
+  height: 30px;
   border-bottom: 1px solid #fff;
   background: #fca;
 }
 
 div#menu :target p a{
   display: block;
-  text-decoration: none;
-  text-align: center;
-  padding: 2px 10px;
-  line-height: 10px;
-  font-size: 10px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 1px 20px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -126,13 +121,21 @@ div#menu :target p a{
 
 div#content {
   position: absolute;
-  top: 55px;
-  left: 125px;
+  top: 70px;
+  left: 170px;
   right: 25px;
   margein: 0 auto -10px;
   background-color: default;
 }
 
+div#content h1 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+div#content ul li {
+  font-size: 17px;
+}
 
 /* Footer */
 
@@ -146,7 +149,7 @@ div#footer {
 }
 
 
-/* LINK */
+/* effect */
 
 a:link, a:visited {
   color: #369;
