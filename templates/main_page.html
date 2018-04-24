@@ -5,13 +5,13 @@
 {% load staticfiles %}
 {% block content %}
 <div id="content">
-  <img src = "{% static "img/kground.jpg" %}", style='width:100%'>
-  <h1>Pystagram</h1>
+  <a href="{% url 'photo:index' %}"><img src = "{% static "img/kground.jpg" %}", style='width:70%'></a>
+  <h1><font-style=italic>Welcome to Pytagram!</font-style></h1>
 
   <ul>
 
   <li><h3><a href="{% url 'photo:photo_add' %}"> Upload Your Picture </a></h3></li>
-  <li><h3><a href="#"> Check your Picture </a></h3></li>
+  <li><h3><a href="{% url 'photo:index' %}"> Check your Picture </a></h3></li>
   <li><h3><a href="http://blog.naver.com/isac31">Go to Wooyong's blog</a></h3></li>
 
   </ul>

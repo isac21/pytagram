@@ -1,10 +1,12 @@
 
+
 body {
-  font-family: "Lucida Grande", Verdana, Verdana, Arial, sans-serif;
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 12px;
 }
 
-/* PAGE STRUCTURE */
+
+/* HEADER */
 
 div#header {
   position: absolute;
@@ -16,8 +18,6 @@ div#header {
   background: skyblue;
 }
 
-/* HEADER */
-
 .maintitle {
   display: table-cell;
   vertical-align: middle;
@@ -25,6 +25,7 @@ div#header {
   color: #ffc;
   font-weight: bold;
   font-size: 18px;
+  font-style: italic;
 }
 
 .welcome {
@@ -48,56 +49,88 @@ div#menu {
   position: absolute;
   top: 30px;
   left: 0px;
-  height: 20px;
-  width: 100%;
+  height: auto;
+  width: 100px;
+  margin: 0px;
   display: table;
-  table-layout: fixed;
-  border-spacing: 40px 0px;
+  /*background: #ffa;*/
   background: #ffa;
-  font-size: 8px;
+  background: -moz-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -webkit-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -o-linear-gradient(#ffa 0%, #fca 70%);
+  background: linear-gradient(#ffa 0%, #fca 70%);
 }
 
-div#menu a:link, div#menu a:visited {
-  color: #36c;
+div#menu h3 {
+  margin: 0;
+  padding: 0;
 }
 
-div#menu > li {
-  display: table-cell;
-  vertical-align: middle;
-  border: 2px solid #bbb;
-  border-radius: 25px;
+div#menu h3 a{
+  display: block;
+  /*border: 2px solid #bbb;*/
   text-align: center;
+  vertical-align: middle;
   font-weight: bold;
+  padding: 8px;
+  color: #fff;
+  font-size: 11px;
+  background: #ffa;
+  background: -moz-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -webkit-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -o-linear-gradient(#ffa 0%, #fca 70%);
+  background: linear-gradient(#ffa 0%, #fca 70%);
 }
+
+div#menu :target h3 a,
+div#menu h3 a:focus,
+div#menu h3 a:hover,
+div#menu h3 a:active {
+  background: -moz-linear-gradient(#fff 0%, #fcd 70%);
+  background: -webkit-linear-gradient(#fff 0%, #fcd 70%);
+  background: -o-linear-gradient(#fff 0%, #fcb 70%);
+  background: linear-gradient(#fff 0%, #fcb 70%);
+}
+
 
 /* pulldown menu */
 
-div#menu li ul {
-  display: none;
-  position: absolute;
+div#menu p{
   margin: 0;
-  padding: 10px 10px 5px 10px;
-  list-style: none;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  background: white;
-  z-index: 1;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  -moz-transition:height 0.5s ease_in;
+  -o-trasition:all 0.5s ease-in;
+  -webkit-trasition:height 0.5s ease-in;
+  transition: height 0.2s ease-in;
 }
 
-div#menu li:hover ul {
+div#menu :target p{
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  background: #fca;
+}
+
+div#menu :target p a{
   display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px 10px;
+  line-height: 10px;
+  font-size: 10px;
+  color: #fff;
 }
-
 
 /* Content */
 
 div#content {
   position: absolute;
-  top: 70px;
-  left: 50px;
-  right: 50px;
-  background-color: skyblue;
+  top: 55px;
+  left: 125px;
+  right: 25px;
+  margein: 0 auto -10px;
+  background-color: default;
 }
 
 
@@ -105,7 +138,7 @@ div#content {
 
 div#footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50px;
   right: 50px;
   height: 30px;

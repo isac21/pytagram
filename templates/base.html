@@ -12,7 +12,6 @@
 
 <body>
 
-<!Header section>
   <div id="header">
     <h2 class="maintitle"><a href="{% url 'home' %}">PYTAGRAM</a></h2>
 
@@ -34,23 +33,21 @@
 
 
   <div id="menu">
-    <li><a href="{% url 'photo:index' %}">Photo</a></li>
+    <h3><a href="{% url 'photo:index' %}">Photo</a></h3>
 
-    <li><a href="#">Add&bigtriangledown;</a>
-      <ul>
-        <li><a href="{% url 'photo:album_add' %}">Album</a></li>
-        <li><a href="{% url 'photo:photo_add' %}">Photo</a></li>
-      </ul>
-    </li>
+    <div id="menu_1">
+      <h3><a href="#menu_1">Add_content</a></h3>
+      <p><a href="{% url 'photo:album_add' %}">Album</a></p>
+      <p><a href="{% url 'photo:photo_add' %}">Photo</a></p>
+    </div>
 
-    <li><a href="#">Change&bigtriangledown;</a>
-      <ul>
-        <li><a href="{% url 'photo:album_change' %}">Album</a></li>
-        <li><a href="{% url 'photo:photo_change' %}">Photo</a></li>
-      </ul>
-    </li>
+    <div id="menu_2">
+      <h3><a href="#menu_2">Change_content</a></h3>
+      <p><a href="{% url 'photo:album_change' %}">Album</a></p>
+      <p><a href="{% url 'photo:photo_change' %}">Photo</a></p>
+    </div>
 
-    <li><a href="{% url 'admin:index' %}">Admin</a></li>
+    <h3><a href="{% url 'admin:index' %}">Admin</a></h3>
 
   </div>
 
@@ -59,7 +56,7 @@
 
 {% block footer %}
   <div id="footer">
-    &copy; wychoi 2018
+    &copy; WYChoi 2018
   </div>
 {% endblock %}
 

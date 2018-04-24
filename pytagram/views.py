@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.contrib.auth.decorators import login_required
 
 class MainView(TemplateView):
-    template_name = 'home.html'
+    template_name = 'main_page.html'
 
 class UserCreateView(CreateView):
     template_name = 'registration/register.html'
